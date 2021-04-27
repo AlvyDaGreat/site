@@ -5,3 +5,26 @@ body {
 p {
     color: white;
 }
+
+@keyframes fade-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.boi {
+	font-family: Antonio;
+	text-align: center;
+	font-size: 16vw;
+	padding: 0px;
+	margin: 0px;
+
+	/* gradient */
+  	background: -webkit-linear-gradient(#00C9FF, #92FE9D);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+
+	/* animation */
+	opacity: 1;
+	animation-name: fade-in;
+	animation-duration: 4s;
+}
