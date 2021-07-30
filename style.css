@@ -1,9 +1,39 @@
 body {
-    background-color: black;
+    background-color: #212326;
+	color: #FFFFFF;
+	text-align: center;
 }
 
-p {
-    color: white;
+a:link, a:visited, a:active {
+	transition: font-size 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+	font-size: 24px;
+	color: #BFBFBF;
+}
+
+a:hover {
+	transition: font-size 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+	font-size: 32px;
+	color: #2EB398;
+}
+
+.toCircle {
+	border-radius: 50%;
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.selectEnable { 
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
 }
 
 @keyframes fade-in {
@@ -12,7 +42,7 @@ p {
 }
 
 .boi {
-	font-family: Antonio;
+	font-family: "Antonio";
 	text-align: center;
 	font-size: 16vw;
 	padding: 0px;
@@ -21,10 +51,82 @@ p {
 	/* gradient */
   	background: -webkit-linear-gradient(#00C9FF, #92FE9D);
   	-webkit-background-clip: text;
+	background-clip: text;
   	-webkit-text-fill-color: transparent;
+}
 
-	/* animation */
-	opacity: 1;
-	animation-name: fade-in;
-	animation-duration: 4s;
+.smol {
+	text-align: center;
+	font-size: 32px;
+}
+
+@keyframes rainbow {
+	0% {
+	  background-position: 0 82%;
+	}
+	50% {
+	  background-position: 100% 19%;
+	}
+	100% {
+	  background-position: 0 82%;
+	}
+  }
+
+.rainbow {
+    background: -webkit-linear-gradient(124deg,#ff2400,#e81d1d,#e8b71d,#e3e81d,#1de840,#1ddde8,#2b1de8,#dd00f3,#dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;
+}
+
+/* why is steam */
+
+.playerAvatarAutoSizeInner {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    z-index: 0;
+}
+
+.playerAvatar .profile_avatar_frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.playerAvatar.profile_header_size .playerAvatarAutoSizeInner img {
+    background: none;
+    filter: none;
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.playerAvatar.profile_header_size .playerAvatarAutoSizeInner .profile_avatar_frame > img {
+    transform: scale(1.22);
+}
+
+.profile_header .playerAvatar.profile_header_size {
+    float: left;
+    margin-right: 18px;
+}
+
+.playerAvatar.profile_header_size {
+    position: relative;
+    width: 166px;
+    height: 166px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.teslabaguette {
+    color: #212326;
 }
