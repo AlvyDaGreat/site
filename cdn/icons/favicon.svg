@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666665 8.466667"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient7647">
+      <stop
+         style="stop-color:#69bf87;stop-opacity:1"
+         offset="0"
+         id="stop7643" />
+      <stop
+         style="stop-color:#547760;stop-opacity:1"
+         offset="1"
+         id="stop7645" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient7647"
+       id="linearGradient7651"
+       x1="6.9455919"
+       y1="-0.051299594"
+       x2="0.55441099"
+       y2="8.5694227"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <ellipse
+       style="fill:url(#linearGradient7651);fill-opacity:1;fill-rule:nonzero;stroke:#61eea1;stroke-width:0.466912;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path846"
+       cy="4.2333336"
+       cx="4.2333336"
+       rx="3.7352939"
+       ry="3.7352941" />
+  </g>
+  <g
+     id="layer2">
+    <g
+       aria-label="A"
+       id="text10856-2"
+       style="font-style:italic;font-size:7.05556px;line-height:1.65;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code Italic';fill:#000000;fill-opacity:0.602273;stroke-width:0.264583"
+       transform="translate(-2.8809437,2.0195736)">
+      <path
+         d="m 5.070579,4.5979273 2.1704115,-4.89548389 h 1.1058764 q 0.089572,0.3892961 0.1688098,0.8853901 0.082682,0.49264899 0.1481392,1.03352939 0.068902,0.5408803 0.1171333,1.0817606 0.051677,0.5374353 0.079237,1.0266392 0.031006,0.4857587 0.034451,0.8681646 H 8.1642767 Q 8.1677218,4.2809783 8.1436061,3.8503411 8.1229356,3.4197039 8.0815944,2.9373902 8.0436983,2.4550765 7.9885767,1.9727628 7.9369003,1.487004 7.8783336,1.0529217 7.8232121,0.61883941 7.7680905,0.29500021 H 7.7060787 L 5.8353907,4.5979273 Z M 5.9766397,3.4059235 6.1178887,2.7513549 H 8.598359 L 8.45711,3.4059235 Z"
+         id="path27560-6"
+         style="fill:#000000;fill-opacity:0.602273" />
+    </g>
+    <g
+       aria-label="A"
+       id="text10856"
+       style="font-style:italic;font-size:7.05556px;line-height:1.65;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code Italic';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       transform="translate(-3.0919173,1.8363174)">
+      <path
+         d="m 5.070579,4.5979273 2.1704115,-4.89548389 h 1.1058764 q 0.089572,0.3892961 0.1688098,0.8853901 0.082682,0.49264899 0.1481392,1.03352939 0.068902,0.5408803 0.1171333,1.0817606 0.051677,0.5374353 0.079237,1.0266392 0.031006,0.4857587 0.034451,0.8681646 H 8.1642767 Q 8.1677218,4.2809783 8.1436061,3.8503411 8.1229356,3.4197039 8.0815944,2.9373902 8.0436983,2.4550765 7.9885767,1.9727628 7.9369003,1.487004 7.8783336,1.0529217 7.8232121,0.61883941 7.7680905,0.29500021 H 7.7060787 L 5.8353907,4.5979273 Z M 5.9766397,3.4059235 6.1178887,2.7513549 H 8.598359 L 8.45711,3.4059235 Z"
+         id="path27560"
+         style="fill:#ffffff;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
