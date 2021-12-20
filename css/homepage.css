@@ -1,0 +1,167 @@
+/* HOME PAGE GRID STYLING */
+.socialwrapper {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    align-content: space-between;
+    justify-content: space-around;
+	grid-auto-flow: row dense;
+	gap: 10px;
+}
+
+.roundcorners {
+	border-radius: 50%;
+}
+
+.linkdiv {
+    box-shadow: 0px 0px 0px 0px black;
+	transition: box-shadow 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.linkdiv:hover {
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.452);
+	transition: box-shadow 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.socialtitle {
+    font-family: "Source Code Pro";
+    font-size: 24px;
+    margin-top: 0%;
+    font-weight: 700;
+}
+
+/* GD */
+
+#geodash {
+	border-radius: 25px;
+	background: #995533;
+	padding: 20px;
+	margin: auto;
+	width: 200px;
+    font-size: 24px;
+	font-family: "Motiva Sans", sans-serif;
+}
+
+/* STEAM */
+
+#steam {
+	border-radius: 25px;
+	background: #171a21;
+	padding: 20px;
+	margin: auto;
+	width: 200px;
+    font-size: 24px;
+	font-family: "Motiva Sans", sans-serif;
+}
+
+#steamimg {
+	border-radius: 50%;
+	transition: 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+#steamimg:hover {
+	border-radius: 10%;
+}
+
+/* TWITCH */
+
+#twitch {
+	border-radius: 25px;
+	background: #1F1F23;
+	padding: 20px;
+	margin: auto;
+	width: 200px;
+    font-size: 24px;
+	font-family: Roobert, Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#twitchimg {
+	border-radius: 50%;
+	transition: 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+#twitchimg:hover {
+	border-radius: 10%;
+}
+
+/* YOUTUBE */
+
+#youtub1 {
+	border-radius: 25px;
+	background: #202020;
+	padding: 20px;
+	margin: auto;
+	width: 200px;
+    font-size: 24px;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+#youtub2 {
+	border-radius: 25px;
+	background: #202020;
+	padding: 20px;
+	margin: auto;
+	width: 200px;
+    font-size: 24px;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+#ytimg1 {
+	border-radius: 50%;
+	transition: 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+#ytimg1:hover {
+	border-radius: 10%;
+}
+
+#ytimg2 {
+    border-radius: 50%;
+	transition: 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+#ytimg2:hover {
+	border-radius: 10%;
+}
+
+/* LANYARD STYLING */
+
+#lanyard {
+	border-radius: 25px;
+	background: #36393F;
+	padding: 20px;
+	margin: auto;
+	width: 200px;
+	font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#discordtag {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+#discordlink a {
+	color: #00AFF4;
+	text-decoration: none;
+}
+
+#discordlink a:visited {
+	color: #00AFF4;
+}
+
+#discordlink a:hover {
+	color: #00AFF4;
+	text-decoration: underline;
+}
+
+#discordstat {
+	color: #8e9297;
+}
+
+#discordimg {
+	border-radius: 50%;
+	transition: 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+
+	outline-color: #747F8D;
+	outline-style: solid;
+	outline-offset: 2px;
+	outline-width: 3px;
+}
+
+#discordimg:hover {
+	border-radius: 10%;
+}

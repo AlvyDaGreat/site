@@ -13,27 +13,46 @@ xmlhttp.send();
 function callbackFunction(data) {
     console.log(data);
 
-    document.getElementById("discordtag").innerHTML = data.data.discord_user.username + "#" + data.data.discord_user.discriminator;
-    document.getElementById("discordimg").src = "https://cdn.discordapp.com/avatars/414915303345094657/" + data.data.discord_user.avatar + ".webp?size=128"; // https://cdn.discordapp.com/avatars/414915303345094657/1dcf29664156c60e7bb1d1900bf059ff.webp?size=128
-    // oh god
-    data.data.activities.forEach(element => {
-        switch(element.type) {
-            case 0:
-                console.log(element);
+    if (data.success) {
+        document.getElementById("discordtag").innerHTML = data.data.discord_user.username + "<span style=\"opacity: 0.25;\">#" + data.data.discord_user.discriminator;
+        document.getElementById("discordtag").style.color = data.data.kv.namecolor;
+
+        document.getElementById("discordimg").src = "https://cdn.discordapp.com/avatars/414915303345094657/" + data.data.discord_user.avatar + ".webp?size=128";
+
+        // oh god
+        data.data.activities.forEach(element => {
+            switch(element.type) {
+                case 0:
+                    console.log(element);
+                    break;
+                case 1:
+                    console.log(element);
+                    break;
+                case 2:
+                    console.log(element);
+                    break;
+                case 3:
+                    console.log(element);
+                    break;
+                case 4:
+                    console.log(element);
+                    document.getElementById("discordstat").innerHTML = element.state;
+                    break;
+            }
+        });
+        
+        document.getElementById("discordlink").innerHTML = "<a href=\"" + data.data.kv.server + "\">" + data.data.kv.server + "</a>";
+
+        switch(data.data.discord_status) {
+            case "online":
+                document.getElementById("discordimg").style["outline-color"] = "#3BA55D";
                 break;
-            case 1:
-                console.log(element);
+            case "dnd":
+                document.getElementById("discordimg").style["outline-color"] = "#ED4245";
                 break;
-            case 2:
-                console.log(element);
-                break;
-            case 3:
-                console.log(element);
-                break;
-            case 4:
-                console.log(element);
-                document.getElementById("discordstat").innerHTML = element.state;
+            case "idle":
+                document.getElementById("discordimg").style["outline-color"] = "#F2A319";
                 break;
         }
-    });
+    }
 }
