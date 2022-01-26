@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 body {
@@ -29,4 +30,16 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-animation: rainbow 10s ease infinite;
     animation: rainbow 10s ease infinite;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1C1F25;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #04AA6D;
 }
