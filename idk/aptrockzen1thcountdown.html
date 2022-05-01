@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.text1 {
+  font-size: 60px;
+}
+.text2 {
+  font-size: 40px;
+}
+.text3 {
+  font-size: 25px;
+}
+.text1, .text2, .text3 {
+  text-align: center;
+}
+
+.fadetoblac {
+  background-color: #000000;
+  transition: background-color 20s cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.fadewhitetext {
+  color: #FFFFFF;
+  font-size: 5.5vw;
+  transition: all 20s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes flashbg {
+  from {
+    background-color: #FFFFFF;
+  }
+
+  to {
+    background-color: #000000;
+  }
+}
+</style>
+</head>
+<body id="backg">
+
+<p id="clock" class="text1"></p>
+<p id="under1" class="text2"></p>
+<p id="under2" class="text3"></p>
+<div id="gifslmao"></div>
+
+<button onclick="soundinteract()" id="buttonlol">click this so you can hear the sound (cause browsers don't allow autoplay audio without interacting lol)</button>
+
+<script>
+
+function play()
+{
+  var audio = new Audio('https://cdn.discordapp.com/attachments/733920382268080181/970090727851847731/final_countdown.mp3');
+  audio.play();
+}
+
+function soundinteract() {
+  document.getElementById("buttonlol").innerHTML = "k thanks";
+  setTimeout(() => {
+    document.getElementById("buttonlol").remove();
+  }, 1000);
+}
+
+var countDownDate = new Date(1651698000 * 1000).getTime(); //Alvy you know what to do
+// var countDownDate = new Date().getTime() + 60200; // for testing
+
+setInterval(function()
+{
+
+  var now = new Date().getTime();
+  
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (86400000));
+  var hours = Math.floor((distance % 86400000) / 3600000);
+  var minutes = Math.floor((distance % 3600000) / 60000);
+  var seconds = Math.floor((distance % 60000) / 1000);
+
+  console.log(distance);
+  if (seconds == 54) {
+    play();
+    document.getElementById("backg").classList.add("fadetoblac");
+    setTimeout(() => {
+      document.getElementById("clock").classList.add("fadewhitetext");
+    }, 15000);
+  }
+
+  if (seconds == 0) {
+    document.getElementById("backg").style.animation = "flashbg 3s";
+    document.getElementById("under1").style.color = "#FFFFFF";
+    document.getElementById("under2").style.color = "#FFFFFF";
+    setTimeout(() => {
+      document.getElementById("gifslmao").innerHTML = '<img src="https://c.tenor.com/OIc0cAei3dwAAAAd/gato-baile.gif">';
+    }, 4000);
+  }
+    
+  if(distance > 1000) {
+    document.getElementById("clock").innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+  } else {
+    document.getElementById("clock").innerHTML = "AptRock327 is now officially in London."
+  }
+  
+  if(distance > 1000) document.getElementById("under1").innerHTML = "...till AptRock327 has arrived at the London airport.";
+  else document.getElementById("under1").innerHTML = "JOLLY GOOD SHOW!";
+  
+  if(distance > 1000) document.getElementById("under2").innerHTML = "";
+  else document.getElementById("under2").innerHTML = "(P.S. AptRock327 has already contacted his dentist, no need to worry.)";
+  
+}, 1000);
+
+</script>
+
+</body>
+</html>
