@@ -85,7 +85,7 @@ setInterval(function()
   var seconds = Math.floor((distance % 60000) / 1000);
 
   console.log(distance);
-  if (seconds == 54) {
+  if (seconds == 54 && minutes == 0 && hours == 0 && days == 0) {
     play();
     document.getElementById("backg").classList.add("fadetoblac");
     setTimeout(() => {
