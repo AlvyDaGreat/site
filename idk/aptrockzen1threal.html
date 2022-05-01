@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#clock 
+{
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+#under1
+{
+  text-align: center;
+  font-size: 40px;
+}
+#under2
+{
+  text-align: center;
+  font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<p id="clock"></p>
+<p id="under1"></p>
+<p id="under2"></p>
+
+<button onclick="play()">some music (activate when 54 seconds have left if you want the best experience)</button>
+
+<script>
+
+function play()
+{
+  var audio = new Audio('https://cdn.discordapp.com/attachments/733920382268080181/970090727851847731/final_countdown.mp3');
+  audio.play();
+}
+
+var countDownDate = new Date(1651698000 * 1000).getTime(); //Alvy you know what to do
+
+var x = setInterval(function()
+{
+
+  var now = new Date().getTime();
+  
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (86400000));
+  var hours = Math.floor((distance % 86400000) / 3600000);
+  var minutes = Math.floor((distance % 3600000) / 60000);
+  var seconds = Math.floor((distance % 60000) / 1000);
+    
+  if(distance > 1000) document.getElementById("clock").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds...";
+  else document.getElementById("clock").innerHTML = "AptRock327 is now officially in London."
+  
+  if(distance > 1000) document.getElementById("under1").innerHTML = "...till AptRock327 has arrived at the London airport.";
+  else document.getElementById("under1").innerHTML = "JOLLY GOOD SHOW!";
+  
+  if(distance > 1000) document.getElementById("under2").innerHTML = "(btw set your clock to London Time; we're not setting up a server clock lol)";
+  else document.getElementById("under2").innerHTML = "(P.S. AptRock327 has already contacted his dentist, no need to worry.)";
+  
+}, 1000);
+
+</script>
+
+</body>
+</html>
