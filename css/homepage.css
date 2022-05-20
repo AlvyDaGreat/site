@@ -1,15 +1,32 @@
 body {
     z-index: 1;
-    background-image: url("/cdn/images/bg.png");
+    background-image: url("/cdn/images/backgrounds/cubebg.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .content {
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 16px 48px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 48px 48px;
     padding: 12px 4px;
-    font-family: Inter;
-    border-radius: 8px;
+    font-family: "Inter";
+    border-radius: 16px;
+    font-size: 20px;
+}
+
+.title {
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    font-size: 15vw;
+    margin: 10px;
+    color: #05F69E;
+    background: linear-gradient(90deg, rgba(0,206,255,1) 0%, rgba(29,253,224,1) 50%, rgba(69,252,81,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#quote {
+    font-size: 40px;
 }

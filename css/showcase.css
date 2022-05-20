@@ -31,6 +31,18 @@ body {
     border-width: 2px;
     margin: 4px;
     transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+
+    animation: imagefadein 1.0s cubic-bezier(0.5, 1, 0.89, 1);
+    opacity: 1;
+}
+
+@keyframes imagefadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .img-wrapper:hover {

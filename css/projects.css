@@ -1,0 +1,75 @@
+.balls {
+    z-index: 1;
+}
+
+#divTimmyGang {
+    background-image: url("/cdn/images/backgrounds/dashlands-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.timmyballs {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    color: black;
+    font-size: 24px;
+}
+
+img.timmy {
+    max-width: 256px;
+    max-height: 256px;
+}
+
+.timmycell {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+img.timmylogo {
+    width: 100%;
+}
+
+.timmycell.one {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.timmycell.two {
+    grid-column: 3 / 3;
+    grid-row: 2;
+}
+
+.timmycell.three {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.timmylinks {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+#discordembed {
+    width: 100%;
+    max-width: 400px;
+}
+
+#div2 {
+    background-image: url("https://cdn.discordapp.com/attachments/721181557569749022/946932098336428102/avatars-2yQzmxRctyGQIcfZ-Oz6TBw-t500x500.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#div3 {
+    background-image: url("https://cdn.discordapp.com/attachments/721181557569749022/946938701622149160/noooooooooooooo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

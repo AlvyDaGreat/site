@@ -22,6 +22,14 @@ body {
 	}
 }
 
+a {
+	color: #04AA6D;
+}
+
+a:hover {
+	color: #05F69E;
+}
+
 .rainbow {
     background: -webkit-linear-gradient(124deg,#ff2400,#e81d1d,#e8b71d,#e3e81d,#1de840,#1ddde8,#2b1de8,#dd00f3,#dd00f3);
     background-size: 1800% 1800%;
@@ -33,11 +41,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1C1F25;
+    background: #2D323B;
 }
 
 ::-webkit-scrollbar-thumb {

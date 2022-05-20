@@ -1,0 +1,15 @@
+#deez {
+    margin-top: 20px;
+    height: auto;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 2px;
+    width: auto;
+    max-width: 90%;
+    max-height: 75vh;
+}
+
+#nuts {
+    font-family: Inter;
+    font-size: 40px;
+}
