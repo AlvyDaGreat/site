@@ -4,6 +4,9 @@
 	background-color: #1c1f25;
 	overflow: hidden;
 	z-index: 69;
+	position: sticky;
+	top: 0;
+	width: 100%;
 }
 
 .navbar a {
@@ -14,10 +17,11 @@
 	text-decoration: none;
 	font-size: 17px;
 	transition: background-color 0.3s;
+	border-right: 2px solid #2D323B;
 }
 
 .navbar a:hover {
-	background-color: #213b33;
+	background-color: #115a3f;
 }
 
 .navbar a.navactive {
