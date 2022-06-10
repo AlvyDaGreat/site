@@ -14,10 +14,21 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+
+            #urlinput, #urlbutton {
+                background-color: #115a3f;
+                color: #FFFFFF;
+            }
+
+            #urlinput {
+                width: 100%;
+            }
         </style>
 	</head>
 	<body id="main">
-        <div id="player"></div>
+        <div id="player">
+            <input id="urlinput" placeholder="paste a url..."><button id="urlbutton" onclick="window.location.href=`?video=${encodeURIComponent(document.getElementById('urlinput').value)}`">Play</button>
+        </div>
         <script type="text/javascript" src="/js/quickplay.js"></script>
 	</body>
 </html>
