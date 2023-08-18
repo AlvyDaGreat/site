@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- dumpster fire.html-->
+<html style="background-color: #0a0c0d; color: white;" id="htmlroot">
+	<head>
+		<title>Quick Player</title>
+
+        <style>
+            #player {
+                max-width: 80vw;
+                max-height: 80vh;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #urlinput, #urlbutton {
+                background-color: #115a3f;
+                color: #FFFFFF;
+            }
+
+            #urlinput {
+                width: 100%;
+            }
+        </style>
+
+        <meta name="theme-color" content="#0000000" />
+	</head>
+	<body id="main">
+        <div id="player">
+            <input type="color" id="colorinput" value="#7dc78c"> <br>
+            <button id="urlbutton" onclick="window.location.href=`?color=${encodeURIComponent(document.getElementById('colorinput').value)}`">yeah</button>
+        </div>
+        <script type="text/javascript" src="/js/solidcolor.js"></script>
+	</body>
+</html>
